@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boundless Learning Studio — apps that make you want one more lesson</title>
+<meta name="description" content="Free learning apps by Boundless: narrated games for ages 2–6, binge-worthy study apps for adults, and smart tools for everyday life. No logins, no ads.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%235B2A86'/%3E%3Ctext%20x='32'%20y='44'%20font-size='30'%20text-anchor='middle'%3E%E2%9C%A6%3C/text%3E%3C/svg%3E">
+<script>
+const GA_ID="";
+if(GA_ID){const s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(s);window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config',GA_ID);}
+</script>
+<style>
+:root{--ink:#1E1B2E;--plum:#5B2A86;--plum-deep:#3D1A5C;--plum-soft:#EFE7F6;--surface:#FAF8FC;--card:#fff;--line:#E7E1F0;--muted:#6E6683;--gold:#C79A3A;--teal:#0E8A6E;
+--shadow:0 1px 2px rgba(30,27,46,.04),0 8px 24px rgba(61,26,92,.06)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--surface);color:var(--ink);font-family:Inter,system-ui,sans-serif;font-size:15.5px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:600;letter-spacing:-.01em;margin:0}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--plum);font-weight:500}
+a{color:inherit}
+.btn{display:inline-flex;align-items:center;gap:9px;background:var(--plum);color:#fff;font-weight:600;font-size:14px;padding:13px 22px;border-radius:999px;text-decoration:none;transition:transform .12s,box-shadow .12s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(91,42,134,.28)}
+.btn.ghost{background:transparent;color:var(--plum);border:1.5px solid var(--plum)}
+.rv{opacity:0;transform:translateY(16px);transition:opacity .55s ease,transform .55s ease}
+.rv.in{opacity:1;transform:none}
+
+.topbar{position:sticky;top:0;z-index:50;background:rgba(250,248,252,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.topbar .wrap{display:flex;align-items:center;gap:12px;height:62px}
+.mark{width:36px;height:36px;border-radius:11px;background:linear-gradient(135deg,var(--plum),var(--plum-deep));color:#fff;display:grid;place-items:center;font-family:Fraunces,serif;font-weight:700;font-size:15px}
+.bname{font-family:Fraunces,serif;font-weight:600;font-size:16px;line-height:1.05}
+.bsub{font-family:"IBM Plex Mono",monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.topbar .cta{margin-left:auto}
+
+.hero{position:relative;overflow:hidden;padding:78px 0 58px;text-align:center;background-image:radial-gradient(rgba(91,42,134,.05) 1px,transparent 1px);background-size:26px 26px}
+.hero::after{content:"";position:absolute;right:-140px;top:-130px;width:440px;height:440px;border-radius:50%;background:radial-gradient(circle,rgba(199,154,58,.16),transparent 62%);pointer-events:none}
+.hero::before{content:"";position:absolute;left:-160px;bottom:-170px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(91,42,134,.12),transparent 60%);pointer-events:none}
+.hero h1{font-size:clamp(34px,6vw,62px);line-height:1.03;max-width:18ch;margin:16px auto 0}
+.hero h1 em{font-style:italic;color:var(--plum)}
+.hero p{max-width:56ch;margin:20px auto 28px;color:var(--muted);font-size:17px}
+.trust{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:30px}
+.tchip{font-family:"IBM Plex Mono",monospace;font-size:11px;color:var(--plum-deep);background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 13px}
+
+section{padding:54px 0}
+.sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:8px}
+.sec-head h2{font-size:clamp(23px,3.2vw,32px)}
+.lead{max-width:62ch;color:var(--muted);margin:6px 0 26px}
+.grid{display:grid;grid-template-columns:1fr;gap:18px}
+@media(min-width:700px){.grid{grid-template-columns:1fr 1fr}}
+.app{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px;box-shadow:var(--shadow);position:relative;overflow:hidden;display:flex;flex-direction:column;transition:transform .15s,box-shadow .15s}
+.app:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(61,26,92,.12)}
+.app::after{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:var(--ac,linear-gradient(90deg,var(--plum),var(--gold)));opacity:.9}
+.app .tile{width:56px;height:56px;border-radius:16px;display:grid;place-items:center;font-size:30px;margin-bottom:16px;box-shadow:var(--shadow)}
+.app h3{font-size:21px}
+.app .aud{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:5px 0 10px}
+.app p{color:var(--muted);font-size:14px;margin:0 0 18px;flex:1}
+.app .go{align-self:flex-start}
+.strip{background:linear-gradient(160deg,var(--plum-deep),var(--plum));color:#fff;border-radius:24px;padding:40px;box-shadow:0 20px 50px rgba(61,26,92,.26)}
+.strip h2{color:#fff;font-size:clamp(22px,3.2vw,32px)}
+.strip h2 em{font-style:italic;color:#e9c98f}
+.feats{display:grid;grid-template-columns:1fr;gap:18px;margin-top:24px}
+@media(min-width:760px){.feats{grid-template-columns:repeat(3,1fr)}}
+.feat h3{color:#fff;font-size:16.5px;font-family:Inter;font-weight:600}
+.feat p{color:#e5d8f2;font-size:13.5px;margin:6px 0 0}
+.about{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:34px;box-shadow:var(--shadow);display:flex;gap:22px;flex-wrap:wrap;align-items:center;justify-content:space-between}
+.about h2{font-size:clamp(21px,3vw,28px);max-width:24ch}
+.about p{color:var(--muted);max-width:52ch;margin:10px 0 0}
+footer{padding:44px 0 60px;text-align:center;color:var(--muted);font-family:"IBM Plex Mono",monospace;font-size:11px;border-top:1px solid var(--line)}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="wrap">
+  <div class="mark">✦</div>
+  <div><div class="bname">Boundless Learning Studio</div><div class="bsub">by Mallory Bailey-Finkley</div></div>
+  <a class="btn ghost cta" href="https://nesoai.github.io/mallory/" target="_blank" rel="noopener">Meet Boundless →</a>
+</div></div>
+
+<header class="hero"><div class="wrap">
+  <span class="eyebrow">Free · no logins · no ads · progress saves on your device</span>
+  <h1>Learning that feels like <em>one more episode.</em></h1>
+  <p>Five apps from one studio: narrated tap-and-learn games for the littlest learners, binge-worthy study paths for grown-ups, and smart tools for everyday life. Built with rigor, designed for delight.</p>
+  <a class="btn" href="#apps">Explore the apps ↓</a>
+  <div class="trust">
+    <span class="tchip">Ages 2–6 → adults</span><span class="tchip">Read-aloud narration</span>
+    <span class="tchip">Streaks · XP · adaptive levels</span><span class="tchip">Works on any phone or tablet</span>
+  </div>
+</div></header>
+
+<div class="wrap">
+  <section id="apps">
+    <div class="sec-head"><span class="eyebrow">For little learners · ages 2–6</span><h2>The garden apps</h2></div>
+    <p class="lead">Every prompt is read out loud, so pre-readers play on their own. Pick an animal, earn stars, and pick up right where you left off — with a take-turns mode for siblings.</p>
+    <div class="grid">
+      <div class="app rv" style="--ac:linear-gradient(90deg,#7c5bb8,#ffd76b)">
+        <div class="tile" style="background:linear-gradient(135deg,#2b2260,#4a3a8f)">✨</div>
+        <h3>Little Lights</h3><div class="aud">Ages 2–6 · a magic garden at night</div>
+        <p>Colors and their meanings, the seven rainbow body lights, plants that grow above and below the ground, calm breathing, and a trip through space — with read-along stories where every word bounces as it's spoken.</p>
+        <a class="btn go" href="https://nesoai.github.io/little-lights/">Play Little Lights →</a>
+      </div>
+      <div class="app rv" style="--ac:linear-gradient(90deg,#54a4e3,#79ce7f)">
+        <div class="tile" style="background:linear-gradient(135deg,#2f7fc4,#79ce7f)">📖</div>
+        <h3>Bible Buddies</h3><div class="aud">Ages 2–6 · a sunny garden of scripture</div>
+        <p>A tappable bookshelf of 89 books — the world's biggest Bible — plus counting games, hero quizzes, heart lessons, and eight narrated stories. Uses Yah, Yehoshua HaMashiach, and Hebrew names, teaching English names as kids advance.</p>
+        <a class="btn go" href="https://nesoai.github.io/bible-buddies/">Play Bible Buddies →</a>
+      </div>
+    </div>
+
+    <div class="sec-head" style="margin-top:44px"><span class="eyebrow">For grown-ups</span><h2>The study apps</h2></div>
+    <p class="lead">Five-minute lessons that queue up the next one before you can put your phone down — with day streaks, XP ranks, and a rapid-fire quiz arena.</p>
+    <div class="grid">
+      <div class="app rv" style="--ac:linear-gradient(90deg,#2dd4bf,#8b5cf6)">
+        <div class="tile" style="background:linear-gradient(135deg,#0a0d18,#3d2f8f)">◐</div>
+        <h3>Lumen</h3><div class="aud">Adults · the living world, both/and</div>
+        <p>The chakra system, the language of color, meridians and energy, plant energetics, and the night sky — tradition presented with respect, science presented without apology. Includes a guided-breathwork Studio.</p>
+        <a class="btn go" href="https://nesoai.github.io/lumen/">Open Lumen →</a>
+      </div>
+      <div class="app rv" style="--ac:linear-gradient(90deg,#e0b25e,#c96f43)">
+        <div class="tile" style="background:linear-gradient(135deg,#110c07,#3d2a12)">📜</div>
+        <h3>The 89</h3><div class="aud">Adults · the complete merged canon</div>
+        <p>Study the Tanakh, the Apocrypha, and the Ethiopian 81 as one shelf of 89 books — why the canons differ, the grand story in five acts, and the hidden treasures most Bibles never printed. With a browsable Library of all 89.</p>
+        <a class="btn go" href="https://nesoai.github.io/the-89/">Open The 89 →</a>
+      </div>
+    </div>
+
+    <div class="sec-head" style="margin-top:44px"><span class="eyebrow">Tools for life</span><h2>The everyday tools</h2></div>
+    <div class="grid">
+      <div class="app rv" style="--ac:linear-gradient(90deg,#2dd4bf,#60a5fa)">
+        <div class="tile" style="background:linear-gradient(135deg,#0a101d,#1e3a5f)">🧭</div>
+        <h3>WayCast</h3><div class="aud">Commuters · road-trippers · families</div>
+        <p>Know your drive before you drive: weather along your route at the time you'll actually be at each point, the best time to leave, live radar, dress-and-prep advice, fuel costs, and things worth a stop near your destination.</p>
+        <a class="btn go" href="https://nesoai.github.io/waycast/">Open WayCast →</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="strip rv">
+      <span class="eyebrow" style="color:#d9c7ec">The studio's promise</span>
+      <h2>Rigor meets <em>delight.</em></h2>
+      <div class="feats">
+        <div class="feat"><h3>🔒 Nothing to sign up for</h3><p>No accounts, no ads, no data harvesting. Progress lives on your own device.</p></div>
+        <div class="feat"><h3>🗣 Made for every reader</h3><p>Narration for pre-readers, listen-along for adults, and honest sources one tap away.</p></div>
+        <div class="feat"><h3>🧠 AI × human, on purpose</h3><p>Built the Boundless way: move fast across information, then think, question, and decide like a human.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="about rv">
+      <div>
+        <span class="eyebrow">Behind the studio</span>
+        <h2>Want something like this built for you?</h2>
+        <p>Boundless Learning Studio is built by Mallory Bailey-Finkley — Boundless Web designs interactive apps, sites, and tools like these for small businesses and organizations, done-for-you.</p>
+      </div>
+      <a class="btn" href="https://nesoai.github.io/mallory/" target="_blank" rel="noopener">Work with Boundless →</a>
+    </div>
+  </section>
+</div>
+
+<footer><div class="wrap">
+  Boundless Learning Studio · boundless.mbf@gmail.com · v1.0<br>
+  Discovering boundless potential, at the next level.
+</div></footer>
+
+<script>
+(function(){
+  if(!("IntersectionObserver" in window))return;
+  var els=document.querySelectorAll(".rv");
+  els.forEach(function(el,i){el.style.transitionDelay=(Math.min(i%4,3)*70)+"ms"});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}})},{threshold:.08});
+  els.forEach(function(el){io.observe(el)});
+})();
+</script>
+</body>
+</html>
