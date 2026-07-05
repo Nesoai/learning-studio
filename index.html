@@ -70,6 +70,13 @@ section{padding:54px 0}
 .about h2{font-size:clamp(21px,3vw,28px);max-width:24ch}
 .about p{color:var(--muted);max-width:52ch;margin:10px 0 0}
 footer{padding:44px 0 60px;text-align:center;color:var(--muted);font-family:"IBM Plex Mono",monospace;font-size:11px;border-top:1px solid var(--line)}
+@media(max-width:560px){
+  .topbar .wrap{height:54px;gap:9px}
+  .mark{width:30px;height:30px;border-radius:9px;font-size:13px}
+  .bname{font-size:13.5px;white-space:nowrap}
+  .bsub{display:none}
+  .topbar .cta{padding:8px 13px;font-size:12px;white-space:nowrap}
+}
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.rv{opacity:1;transform:none}}
 </style>
 </head>
@@ -139,7 +146,7 @@ footer{padding:44px 0 60px;text-align:center;color:var(--muted);font-family:"IBM
       <div class="app rv" style="--ac:linear-gradient(90deg,#10b981,#f59e0b)">
         <div class="tile" style="background:linear-gradient(135deg,#0e1317,#14352a)">🏗</div>
         <h3>PermitPath</h3><div class="aud">Developers · brokers · lenders</div>
-        <p>See the timeline before you buy the dirt: model entitlement &amp; permitting schedules across the 48 contiguous states — zoning, site plan, environmental, hearings — then turn every month of delay into dollars of carrying cost.</p>
+        <p>See the timeline before you buy the dirt: model entitlement &amp; permitting schedules across all 50 states — zoning, site plan, environmental, hearings — then turn every month of delay into dollars of carrying cost.</p>
         <a class="btn go" href="https://nesoai.github.io/permitpath/">Open PermitPath →</a>
       </div>
     </div>
@@ -170,7 +177,7 @@ footer{padding:44px 0 60px;text-align:center;color:var(--muted);font-family:"IBM
 </div>
 
 <footer><div class="wrap">
-  Boundless Learning Studio · boundless.mbf@gmail.com · v1.1<br>
+  Boundless Learning Studio · boundless.mbf@gmail.com · v1.2<br>
   Discovering boundless potential, at the next level.
 </div></footer>
 
